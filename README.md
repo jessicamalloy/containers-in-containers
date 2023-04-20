@@ -2,7 +2,7 @@
 
 `docker build -t outer-container .`
 
-The important bit here is mounting the docker socket so the containers can talk to each other
+The important bit here is mounting the docker socket so the containers can talk to each other <br>
 `docker run -it -v /var/run/docker.sock:/var/run/docker.sock outer-container /bin/bash`
 
 `docker build -t inner-container -f Dockerfile-inner .`
