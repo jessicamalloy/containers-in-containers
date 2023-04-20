@@ -19,6 +19,3 @@ RUN apt-get install -y docker-ce-cli
 
 # Copy inner container into outer container
 COPY . .
-
-# Mount Docker socket
-# docker run -it -v /var/run/docker.sock:/var/run/docker.sock outer-container /bin/bash
